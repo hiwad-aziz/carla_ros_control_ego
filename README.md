@@ -4,9 +4,9 @@ A simple docker environment and python ROS node to control the ego vehicle in th
 ## Usage
 
  - Build the docker environment with following command:
-	  `docker build --tag carla_ros_control:local`
+	  `docker build --tag carla_ros_control:local .`
  - Run the docker image:
-	  `bash /home/carla/shared/run-docker.sh`
+	  `bash run-docker.sh`
  - Launch the CARLA simulator.
  - Launch all the dependencies (CARLA ROS bridge, ego vehicle, manual control) using the provided launch script:
 	  `roslaunch /home/carla/shared/sample_ros_control/carla_ros_dep.launch`

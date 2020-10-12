@@ -3,7 +3,7 @@
 IMAGE=carla_ros_control:local
 
 SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
-SHARED_DOCKER_DIR=/home/carla/
+SHARED_DOCKER_DIR=/home/carla/shared
 SHARED_HOST_DIR=$SCRIPTPATH
 
 docker run -it -P -v ~/carla:/data --rm \
