@@ -19,6 +19,6 @@ if __name__ == '__main__':
     parser.add_argument("--speed", default = 5.0, help="speed input (m/s)")
     args = parser.parse_args()
     try:
-		control_vehicle(args.speed, args.steering_angle)
+        control_vehicle(args.speed, args.steering_angle)
     except rospy.ROSInterruptException:
-		pass
+        pass
